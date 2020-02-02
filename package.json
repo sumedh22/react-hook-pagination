@@ -1,11 +1,17 @@
 {
     "name": "react-hook-pagination",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "React Hook for implementing load more on scroll for list and tables in React",
     "author": "sumedh22",
     "license": "MIT",
     "repository": "sumedh22/react-hook-pagination",
-    "keywords": ["react", "pagination", "hooks", "react hook", "react pagination hook"],
+    "keywords": [
+        "react",
+        "pagination",
+        "hooks",
+        "react hook",
+        "react pagination hook"
+    ],
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "jsnext:main": "dist/index.es.js",
