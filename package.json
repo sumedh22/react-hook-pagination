@@ -1,7 +1,7 @@
 {
     "name": "react-hook-pagination",
     "version": "1.0.0",
-    "description": "Hook for implementing load more on scroll for list and tables in React",
+    "description": "React Hook for implementing load more on scroll for list and tables in React",
     "author": "sumedh22",
     "license": "MIT",
     "repository": "sumedh22/react-hook-pagination",
@@ -58,9 +58,5 @@
     },
     "files": [
         "dist"
-    ],
-    "dependencies": {
-        "webpack": "^4.41.5",
-        "webpack-dev-server": "^3.10.1"
-    }
+    ]
 }

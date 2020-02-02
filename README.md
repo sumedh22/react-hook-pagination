@@ -1,6 +1,6 @@
 # react-pagination
 
-> Hook for implementing load more on scroll for list and tables in React
+> React Hook for implementing load more on scroll for list and tables in React
 
 [![NPM](https://img.shields.io/npm/v/react-pagination.svg)](https://www.npmjs.com/package/react-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
