@@ -4,7 +4,9 @@
 
 [![NPM](https://img.shields.io/npm/v/react-pagination.svg)](https://www.npmjs.com/package/react-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## [Website](https://sumedh22.github.io/react-pagination/)
+## Website
+
+Find Demos and Docs [here](https://sumedh22.github.io/react-pagination/)
 
 ## Install
 
