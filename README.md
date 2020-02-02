@@ -6,7 +6,7 @@
 
 ## Website
 
-Find Demos and Docs [here](https://sumedh22.github.io/react-pagination/)
+Find Demos and Docs [here](https://sumedh22.github.io/react-hook-pagination/)
 
 ## Install
 
