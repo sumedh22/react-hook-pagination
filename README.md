@@ -1,8 +1,13 @@
 # react-hook-pagination
 
-> React Hook for implementing load more on scroll for list and tables in React
+React Hook for implementing load more on scroll for list and tables in React.
+* Easy to use hook API, hook your list/table to a scroll element and wait for the hook to tell you when to fetch next batch of data!
+* Initial fetch till scroll appears
+* Customise load behaviour via parameters (fetchSize, limit etc)
+* Configure custom loader, end of list behavior (show spinner, loader icons etc)
+* Externalized fetch (You define how to fetch, hook decides when to fetch)
 
-[![NPM](https://img.shields.io/npm/v/react-pagination.svg)](https://www.npmjs.com/package/react-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-pagination.svg)](https://www.npmjs.com/package/react-hook-pagination) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Website
 
@@ -11,7 +16,7 @@ Find Demos and Docs [here](https://sumedh22.github.io/react-hook-pagination/)
 ## Install
 
 ```bash
-npm install --save react-pagination
+npm install --save react-hook-pagination
 ```
 
 ## Usage
@@ -19,7 +24,7 @@ npm install --save react-pagination
 ```jsx
 import React, { useState, useRef, useEffect } from "react";
 import person from "./mock.json";
-import useLoadMoreOnScroll from 'react-pagination';
+import useLoadMoreOnScroll from 'react-hook-pagination';
 
 
 const List = props => {
