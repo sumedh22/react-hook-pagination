@@ -29,9 +29,7 @@
         "deploy": "gh-pages -d example/build"
     },
     "peerDependencies": {
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
-        "react-scripts": "3.3.0"
+        "react": "^16.12.0"
     },
     "devDependencies": {
         "@svgr/rollup": "^2.4.1",
