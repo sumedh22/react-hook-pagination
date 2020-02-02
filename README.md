@@ -1,4 +1,4 @@
-# react-pagination
+# react-hook-pagination
 
 > React Hook for implementing load more on scroll for list and tables in React
 
