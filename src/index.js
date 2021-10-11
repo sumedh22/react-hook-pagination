@@ -86,7 +86,10 @@ const useLoadMoreOnScroll = props => {
     }, [delta, doneFetching]);
 
     useEffect(() => {
-        if (lastFetchSize <= limit) {
+        if (lastFetchSize === 0) {
+            setStart(0);
+            setEnd(limit >= fetchSize ? fetchSize : limit);
+        } else if (lastFetchSize <= limit) {
             if (lastFetchSize - fetchSize !== lastFetchSize) {
                 setStart(lastFetchSize - fetchSize);
                 setEnd(lastFetchSize);
