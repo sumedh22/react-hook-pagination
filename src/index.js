@@ -86,7 +86,10 @@ const useLoadMoreOnScroll = props => {
     }, [delta, doneFetching]);
 
     useEffect(() => {
-        if (lastFetchSize <= limit) {
+        if (lastFetchSize === 0) {
+            setStart(0);
+            setEnd(limit >= fetchSize ? fetchSize : limit);
+        } else if (lastFetchSize <= limit) {
             if (lastFetchSize - fetchSize !== lastFetchSize) {
                 setStart(lastFetchSize - fetchSize);
                 setEnd(lastFetchSize);
@@ -108,13 +111,28 @@ const useLoadMoreOnScroll = props => {
         l(`User requested stop fetching`);
         setDoneFetching(true)
     }
+    const reset = () => {
+        l(`User reset to initial state`);
+        setLastFetchSize(0);
+        setDelta(999);
+        setScrollTop(0);
+        setScrollDirection('none');
+        setHasScrollbar(false);
+        setDoneFetching(false);
+        setIsFetching(false);
+        setInitFetchCount(0);
+        setLastCount(0);
+        setStart(0);
+        setEnd(0);
+    }
     return {
         start,
         end,
         isFetching,
         doneFetching,
         setIsFetching,
-        forceDonefetching
+        forceDonefetching,
+        reset,
     };
 };
 
